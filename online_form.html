@@ -1,0 +1,235 @@
+
+	<main class="no-banner" id="nop">
+		<section class="ipl0 ipl1">
+			<div class="container">
+				<div class="body d-flex align-start">
+					<div class="left full">
+						<h2>Request Appointment</h2>
+						<p>At NRI TAXATION we've made it easy to make an appointment with us. Simply enter your details in the boxes below. Click Send request now when you have completed your details and we'll email to confirm your appointment.  </p>
+						
+						<!--form part starts from here here-->
+							<div class="form">
+
+							<form id="request_form">
+
+								<input type="text" class="in sp-field" name="firstname" id="firstname">
+
+								<div>
+
+									<fieldset>
+
+										<label for="" class="in-label">Request appointment for</label>
+
+										<select name="appointment_for" id="appointment_for" class="in" require>
+
+											<option value="">Select</option>
+
+											 <option value="Individual Tax Filing">Individual Tax Filing</option>
+
+											 <option value="Capital Gains">Capital Gains</option>
+
+											 <option value="Repatriation and Remittance">Repatriation and Remittance</option>
+
+											 <option value="FEMA Compliance">FEMA Compliance</option>
+
+											 <option value="Deputation">Deputation</option>
+
+											 <option value="Others">Others</option>
+
+										</select>
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Request appointment day</label>
+
+										<input type="date" class="in" id="date"  name="date" min="<?php echo date("Y-m-d", strtotime("+1days")); ?>">
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Request appointment place</label>
+
+										<select name="place" id="place"  class="in">
+
+											 <option value="">Please select</option>
+
+											 <option value="India  Mumbai">India – Mumbai</option>
+
+											 <option value="India-Bangalore">India-Bangalore</option>
+
+											 <option value="Australia-Sydney">Australia-Sydney</option>
+
+											 <option value="India-Hubli">India-Hubli</option>
+
+											 <option value="India-Mysore">India-Mysore</option>
+
+											 <option value="Request Skype Meeting">Request Skype Meeting</option>
+
+											 <option value="Request Phone Meeting">Request Phone Meeting</option>
+
+										</select>
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Specify preferred appointment time</label>
+
+										<select name="time" id="time"  class="in">
+
+											<option value="">Please Select</option>
+
+											<option value="10 AM">10 AM</option>
+
+											 <option value="11 AM">11 AM</option>
+
+											 <option value="12 PM">12 PM</option>
+
+											 <option value="1 PM">1 PM</option>
+
+											 <option value="2 PM">2 PM</option>
+
+											 <option value="3 PM">3 PM</option>
+
+											 <option value="4 PM">4 PM</option>
+
+											 <option value="5 PM">5 PM</option>
+
+										</select>
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Name</label>
+
+										<input type="text" id="name" class="in" name="name">
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Email</label>
+
+										<input type="email" class="in" name="email" id="email">
+
+									</fieldset>
+
+									<fieldset>
+
+										<label for="" class="in-label">Contact Number</label>
+
+										<input type="tel" class="in" name="contactnumber" id="contact_number">
+
+									</fieldset>
+
+									
+
+									<fieldset>
+
+										<label for="" class="in-label">Tell Us More</label>
+
+										<select name="more_details" id="more_details" class="in">
+
+											<option value="null">Select</option>
+
+											 <option value="I'd like someone to call me">I'd like someone to call me</option>
+
+											 <option value="I'd like someone to email me">I'd like someone to email me</option>
+
+											 <option value="I have an urgent request">I have an urgent request</option>
+
+											 <option value="I'm just doing some research">I'm just doing some research</option>
+
+										</select>
+
+									</fieldset>
+
+									<fieldset class="full">
+
+										<label for="" class="in-label">Comments</label>
+
+										<textarea class="in" name="comments"  id="comments"></textarea>
+
+									</fieldset>
+
+									<fieldset class="full">
+
+										<input type="submit" id="submit" class="in btn read" value="submit" name="submit">
+
+									</fieldset>
+
+								</div>
+
+							</form>
+
+						</div>
+
+						<!--form part starts from here here-->
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<script>
+    const request_form = document.getElementById("request_form");
+    console.log(request_form);
+    request_form.addEventListener("submit",update_data);
+    function update_data(e){
+        e.preventDefault();
+        var appointment_for = document.getElementById("appointment_for").value;
+        var date = document.getElementById("date").value;
+        var place = document.getElementById("place").value;
+        var time = document.getElementById("time").value;
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var contact_number = document.getElementById("contact_number").value;
+        var more_details = document.getElementById("more_details").value;
+        var comments = document.getElementById("comments").value;
+        console.log(appointment_for,date,place,time,name,email,contact_number,more_details,comments);
+        if(appointment_for == ''){
+            alert("Plese enter the Request appointment for");
+            document.getElementById("appointment_for").focus();
+        }else if(date == ''){
+            alert("Plese enter the date");
+            document.getElementById("date").focus();
+        }else if(place == ''){
+            alert("Plese select  the Place");
+            document.getElementById("place").focus();
+        }else if(time == ''){
+            alert("Plese select  the Time");
+            document.getElementById("time").focus();
+        }else if(name == ''){
+            alert("Plese Enter  the name");
+            document.getElementById("name").focus();
+        }else if(email == ''){
+            alert("Plese Enter  the email");
+            document.getElementById("email").focus();
+        }else if(contact_number == ''){
+            alert("Plese Enter  the contact number");
+            document.getElementById("contact_number").focus();
+        }else if(more_details == ''){
+            alert("Plese Select more details");
+            document.getElementById("more_details").focus();
+        }
+        else{
+            
+        //send data via xhr object
+        var param = 'appointment_for='+appointment_for+'&date='+date+'&place='+place+'&time='+time+'&name='+name+'&email='+email+'&contact_number='+contact_number+'&more_details='+more_details+'&comments='+comments;
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST","send_email.php",true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onload = function(){
+            console.log(xhr.response);
+        }
+        xhr.send(param);
+        }
+    }
+
+
+</script>
