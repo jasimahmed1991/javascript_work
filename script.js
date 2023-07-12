@@ -1,5 +1,5 @@
-//  let fruits = ["apple","mango","grapes"];
-// let numbers = [1,2,3];
+// let fruits = ["apple", "mango", "grapes"];
+// let numbers = [1, 2, 3];
 // console.log(fruits);
 
 // console.log(typeof fruits);
@@ -7,7 +7,7 @@
 
 //Refecence type example
 
-// let array1 = ["item1","item2"];
+// let array1 = ["item1", "item2"];
 // let array2 = array1;
 
 // console.log("array1", array1);
@@ -15,8 +15,8 @@
 
 // array1.push("item3");
 // console.log("after pushing item into array 1");
-// console.log("array1",array1);
-// console.log("array2",array2);
+// console.log("array1", array1);
+// console.log("array2", array2);
 
 // ***********
 // console.log("How to clone array");
@@ -44,7 +44,6 @@
 //   i++;
 // }
 // *******while loop in array***********
-
 
 // ***********
 //eg for arrays concat
@@ -118,9 +117,8 @@
 
 // person["gender"] = ["one","two"];
 // person[race] = "black";
-// console.log(person);  
+// console.log(person);
 // ********objects example 1*********
-
 
 // ******* iteration of objects 1st way *******
 // const person = {
@@ -133,7 +131,6 @@
 //   console.log(person[key]);
 // }
 // ******* iteration of objects 1st way *******
-
 
 // ******* iteration of objects 2nd way *******
 // const person = {
@@ -148,7 +145,6 @@
 //   }
 // ******* iteration of objects 2nd way *******
 
-
 // ********Spread operator in array ********
 // const array1 = ['apple','banaba'];
 // const array2 = ['guava','mango'];
@@ -156,12 +152,10 @@
 // console.log(merge_two);
 // ********Spread operator in array ********
 
-
 // ********how to speard string in arrays*********
 // const newArray = [..."mango"];
 // console.log(newArray);
 // ********how to speard string in arrays*********
-
 
 // **********spread operaters in object  ************
 //if there are same values in both the objects it gets overwritten
@@ -181,15 +175,13 @@
 
 // **********spread operaters in object ************
 
-
 //********** convert strings into object values **********
-//eg 
+//eg
 
 //  const newObject = {..."abcdefg"}
 // console.log(newObject);
 
 //********** convert strings into object values **********
-
 
 //****** destructuring of Object *******
 // how to access the values of objects eg1
@@ -207,7 +199,6 @@
 
 //****** destructuring of Object *******
 
-
 //******* objects inside arrays ********
 // const users = [
 // {userId:1,firstName : "test",gender:"male"},
@@ -221,10 +212,8 @@
 //   console.log(user.firstName);
 // }
 
-
-//218 to access individual 
+//218 to access individual
 //******* objects inside arrays ********
-
 
 //******* nested destructuring ********
 
@@ -239,7 +228,6 @@
 // console.log(user2);
 // console.log(user3);
 
-
 //******* nested destructuring ********
 
 //******* nested destructuring for specfic values inside the object ********
@@ -250,14 +238,12 @@
 //   {userId:2,firstName : "john",gender:"male"},
 //   {userId:3,firstName : "jack",gender:"male"}
 //   ];
-  
+
 //   const [ {firstName},{userId:userId2},{userId:userId3,firstName:firstName3} ] = users;
 //   console.log(firstName);
 //   console.log(firstName3);
-  
-  
-//******* nested destructuring for specfic values inside the object ********
 
+//******* nested destructuring for specfic values inside the object ********
 
 //*******functions in javscript ********
 //eg to check if num is even or odd
@@ -296,7 +282,6 @@
 
 //*******functions in javscript reduce code ********
 
-
 //*********** find target index *******
 // function FindTarget (myArray,target){
 //   for(let i = 0;i<myArray.length;i++){
@@ -313,7 +298,6 @@
 // console.log(`the target element was found at ${ans} position `);
 //*********** find target index *******
 
-
 //**********return 1st charactrer of string ********
 
 // function firstChar(name){
@@ -324,8 +308,6 @@
 // console.log(result);
 
 //**********return 1st charactrer of string ********
-
-
 
 //******* function expressions **************
 //different approcah to express functions
@@ -358,7 +340,6 @@
 // console.log(ans);
 
 //******* arrow  function example **************
-
 
 //******* hoisting**************
 // calling the function even before it's declared is call hoisting
@@ -403,21 +384,18 @@
 //   console.log(addTwo(2,3));
 //   console.log(mulTwo(2,3));
 
-
 // }
 
 // app();
 
 //************functions inside function *********
 
-
 //********lexical scope *******
-// lexical scope 
+// lexical scope
 
 // const myVar = "value1";
 
 // function myApp(){
-    
 
 //     function myFunc(){
 //         // const myVar = "value59";
@@ -427,7 +405,6 @@
 //         myFunc2();
 //     }
 
-
 //     console.log(myVar);
 //     myFunc();
 // }
@@ -436,8 +413,6 @@
 
 //the value of myvar is first searched inside the function myFunc if not found it will search the outer function if not the global function
 //********lexical scope *******
-
-
 
 //*********block scope vs function scope *******
 //if you define variable using let and const inside any block those variable are only accessed inside the block if you use them outside that block you will get eroor.
@@ -455,7 +430,6 @@
 //   console.log(firstName);
 // }
 
-
 // {
 //   let firstName = "ahmed";
 //   console.log(firstName);
@@ -463,7 +437,6 @@
 // This will not throw any error because they both are in diff block
 
 //*********block scope vs function scope *******
-
 
 // ******* accessing block variables ******
 //let and const are block scope
@@ -477,7 +450,6 @@
 // console.log(firstName);
 
 // ******* accessing block variables ******
-
 
 // ******* accessing block variables eg ******
 
@@ -493,7 +465,6 @@
 
 //first console will work the second one throws error because we cannot use const oustide the function, only let will work
 // ******* accessing block variables ******
-
 
 // ***** default parameters ******
 
@@ -516,7 +487,7 @@
 
 // myFunc(1,2,3,4,5);
 
-//here 1 is passed to a , 2 is passed to b rest all paraments are passed to c as a array 
+//here 1 is passed to a , 2 is passed to b rest all paraments are passed to c as a array
 // ********rest parameters *******
 
 // ********rest parameters eg *******
@@ -537,7 +508,6 @@
 
 // ********rest parameters eg *******
 
-
 //***********parameter destructuring *********
 //basic structure
 
@@ -556,10 +526,8 @@
 
 //***********parameter destructuring *********
 
-
 //***********parameter destructuring passing object *********
 //we can do the direct destructuring in the parameters itself istead of writing Obj.first name
-
 
 // const person = {
 //   firstName : "jasim",
@@ -576,8 +544,6 @@
 
 //***********parameter destructuring passing object*********
 
-
-
 //***********parameter destructuring passing arrays*********
 // const fruits = ["apple","mango",'grapes'];
 // function myFunc([one,tow]){
@@ -586,7 +552,6 @@
 
 // myFunc(fruits);
 //***********parameter destructuring passing arrays*********
-
 
 //*********call back functions  basics**********
 //these are the basics of how agruments are passed into functions
@@ -602,9 +567,6 @@
 
 //*********call back functions basics**********
 
-
-
-
 //*********call back functions using actual functions **********
 //passing the value as a function to a in the above eg
 //here we are passing hello world as a argument to myFunc function
@@ -612,7 +574,6 @@
 // function hello_world(name){
 //   console.log("Hello world......"+name);
 // }
-
 
 // function myFunc(callback){
 // callback("jasim");
@@ -624,7 +585,6 @@
 //We always call the paramenter as callback , it is a practice
 //taking a function as a input and calling that is called callback function
 //*********call back functions using actual functions **********
-
 
 //********* function returning functions **********
 //basic return eg
@@ -651,7 +611,6 @@
 
 //********* function returning functions **********
 
-
 //********* function returning functions **********
 //basic return eg of objects
 
@@ -669,7 +628,6 @@
 
 //********* function returning functions **********
 
-
 //********* function returning functions real eg **********
 
 // function myFunc(){
@@ -685,7 +643,6 @@
 // ans();
 
 //********* function returning functions real eg **********
-
 
 //******* important array methods -foreach method *******
 //write a prog to use multiple array  items with 2 one by one
@@ -706,7 +663,6 @@
 
 //here we have creadted seperate function to execute ,we can do it in single line as well
 //******* important array methods -foreach method *******
-
 
 //******* important array methods -foreach method *******
 //inside a argument  you are passing whole function
@@ -737,9 +693,7 @@
 //   console.log(user.firstname);
 // }
 
-
 //******* important array methods -foreach method real world eg *******
-
 
 //******** map method very imp *************
 //map method always returns something which will be stored in new array.
@@ -773,7 +727,6 @@
 //each time a single element from array is picked and returned in the form of array
 //******** map method very imp *************
 
-
 //******** map method real world eg *************
 
 // const users = [
@@ -789,7 +742,6 @@
 
 //this was done using anonamus function
 //******** map method real world eg *************
-
 
 //******** map method real world eg using arrow function *************
 
@@ -807,7 +759,6 @@
 //this was done using map  function
 //******** map method real world eg  using arrow function*************
 
-
 //******** filter method*************
 //This return only boolean values
 //Those values are stored in the form of array
@@ -824,9 +775,8 @@
 //call back method
 //******** filter method*************
 
-
 //******** filter method using function as arguement*************
-//by using function inside arguments 
+//by using function inside arguments
 
 // const numbers = [1,2,3,4,5,6,7,8,9];
 
@@ -854,25 +804,23 @@
 
 //******** filter method using arrow function*************
 
-
 //*********** reduce method ***********
-// reduce 
+// reduce
 //const numbers = [1,2,3,4,5, 10];
 
-// aim : sum of all the numbers in array 
+// aim : sum of all the numbers in array
 
 // const sum = numbers.reduce((accumulator, currentValue)=>{
 //     return accumulator + currentValue;
 // }, 100);
 
 // console.log(sum);
-// accumulator , currentValue,  return 
-// 1               2              3 
+// accumulator , currentValue,  return
+// 1               2              3
 // 3               3              6
 // 6               4              10
 // 10              5              15
 // 15              10             25
-
 
 // const userCart = [
 //     {productId: 1, productName: "mobile", price: 12000},
@@ -886,7 +834,7 @@
 
 // console.log(totalAmount);
 
-// total price      currentValue     return 
+// total price      currentValue     return
 // 0                {}                  12000
 // 12000            22000                34000
 // 34000            15000                49000
@@ -895,7 +843,6 @@
 //********* sort method ***********
 //sort method changes the original array
 //here all elements inside are sorted based on converting numbers into strings
-
 
 // const numbers = [40,100,50,44,300];
 // numbers.sort();
@@ -911,11 +858,7 @@
 
 //********* sort method based on strings ***********
 
-
-
-
 // ********** find methode*********
-
 
 // const myArray = ["cat","dog","apple","mango"];
 
@@ -926,10 +869,9 @@
 // const ans = myArray.find(MyLength3);
 // console.log(ans);
 
-//each time an item is passed as arguement in find method and checked with the function . If matched it will be returned 
-//if the string does not match the equation it will be returned false 
+//each time an item is passed as arguement in find method and checked with the function . If matched it will be returned
+//if the string does not match the equation it will be returned false
 // ********** find methode*********
-
 
 // ******* find method real world eg *********
 
@@ -938,7 +880,6 @@
 //   {userid:2,username : "peter"},
 //   {userid:3,username : "pan"}
 // ];
-
 
 // const ans =  users.find((string)=>{
 // return string.userid === 3;
@@ -951,11 +892,9 @@
 //************* every method ************
 // const numbers = [2,4,6,9,10];
 
-
 // const ans = numbers.every((number)=>number%2===0);
 
 // console.log(ans);
-
 
 //************* every method ************
 
@@ -967,23 +906,20 @@
 //   {productId: 3, productName: "tv", price: 15000},
 // ]
 
-
 // const ans = userCart.every((cartItem)=>cartItem.price < 30000);
 // console.log(ans);
-
 
 //the condition checked here is if every element satisfy the condition true is returned or else false.
 //in the above eg it is checked if the price of cert item is less then 30k or not
 //********** every method real world example ********
 
-
 //*********** some methode **************
-// some method 
+// some method
 
 //const numbers = [3,5,11,9];
 
-// kya ek bhi number esa hai jo even hai 
-// true 
+// kya ek bhi number esa hai jo even hai
+// true
 
 // const ans = numbers.some((number)=>number%2===0);
 // console.log(ans);
@@ -1000,8 +936,6 @@
 
 //any any of the the element passed satisfies the conditon it retuens true else false.
 //*********** some methode **************
-
-
 
 //***************** splice method *******************
 
@@ -1022,9 +956,7 @@
 // console.log(result);
 // console.log(myArray);
 
-
 //***************** splice method *******************
-
 
 // *********** iterables *************
 //The one's for which we can apply for loop is called iterables
@@ -1035,7 +967,6 @@
 //   console.log(char);
 //  }
 
-
 //  //eg2
 //  const items = ['item1','item2','item3','item4'];
 //  for(let item of items){
@@ -1045,10 +976,9 @@
 //this eg doesn't work for objects, because objects are not iterables
 //************* iterables *************
 
-
 //***********array like objects***********
 // strings are array like objects,because they have length property
-//And we can access with index 
+//And we can access with index
 
 // const myName = "john";
 // console.log(myName[0]);
@@ -1088,7 +1018,6 @@
 
 //******** set eg to check if any item is present or not *************
 
-
 // *********** map data structure **********
 //always remembers the key in the object will always be in string and symbol
 // const person = {
@@ -1097,7 +1026,6 @@
 //     1:"one"
 // }
 //*********** map data structure ***********
-
 
 //********** map data structure ********
 // const person = new Map();
@@ -1111,7 +1039,6 @@
 // }
 //********** map data structure ********
 
-
 //*********** map method is iterable in for of loop **************
 //it returns in the form of arrays
 
@@ -1123,9 +1050,7 @@
 //     console.log(key);
 // }
 
-
 //*********** map method is iterable in for of loop **************
-
 
 //********** storing other object data into the map structure *********
 
@@ -1147,7 +1072,6 @@
 
 //********** storing other object data into the map structure *********
 
-
 // ********** cloning using object.assign *************
 
 // const obj = {
@@ -1161,7 +1085,6 @@
 // console.log(obj);
 // console.log(obj2);
 
-
 //if we do not want this to happen we need to clone
 // ********** cloning using object.assign *************
 
@@ -1173,9 +1096,7 @@
 // }
 // const obj2 = {...obj};
 
-
 // ********** cloning of obejcts using spread operator *************
-
 
 // ********** cloning of objects using object.assign *************
 
@@ -1187,7 +1108,6 @@
 
 // ********** cloning of objects using object.assign  *************
 
-
 //********optional chaining************
 
 // const user = {
@@ -1197,16 +1117,14 @@
 
 // //if we try to access address.housenumber we will get error. so we use optional chaining
 // //console.log(user.firstName);
-// //console.log(user.address);// we will get undefined here    
-// //console.log(user.address.houseNumber);// we will get error here    
+// //console.log(user.address);// we will get undefined here
+// //console.log(user.address.houseNumber);// we will get error here
 
 // //so we use optional chaining
 
 // console.log(user?.address?.houseNumber);
 
 //********optional chaining************
-
-
 
 //********* methods ***************
 //functions inside objects are called methods
@@ -1234,10 +1152,8 @@
 // //how to access methods with first name and age
 // person.about();
 
-
 //this refers to the object which has called it
 //********* methods example ***************
-
 
 //***********another example to show how this is reffered ***********
 
@@ -1254,8 +1170,6 @@
 // console.log(this);//here this is a window object
 
 //***********another example to show how this is reffered ***********
-
-
 
 //********* functions outside objects **************
 //very important
@@ -1280,7 +1194,6 @@
 // person2.about();
 
 //********* functions outside objects **************
-
 
 //************* wind0w object *************
 
@@ -1315,11 +1228,8 @@
 // user1.about.call(user2);//  we can access about method of user1 object for user2 object,inside parameter we will pass the object which we want to access
 // //if we want to call for user1 iteself we can use linke this user1.about.call(user1)
 
-
 //if we use call method , we should mention inside parameter which object should be passed
 //************* */ call , apply and bind methods , very imp***********
-
-
 
 //************ call method with arguments ***********/
 
@@ -1341,11 +1251,8 @@
 // user1.about.call(user1,"football","jazz"); //{user1 is object}{about is method}{call is to call the method inside object}{in first parameter we will pass object name to which it needs to call}{rest are parameters}
 // user1.about.call(user2,"cricket","indie");
 
-
 //This is how we use call method
 //************ call method with arguments ***********/
-
-
 
 //********** we can define the method or function oustide the objects **********
 
@@ -1369,11 +1276,9 @@
 
 //********** we can define the method or function oustide the objects **********
 
-
 //********* apply method *************
-//call and apply are similar they don't have much difference 
+//call and apply are similar they don't have much difference
 //the only differnce is apply takes argument in the form of arrays
-
 
 // function about(hobby,music){
 //     console.log(`fav hobby is ${hobby} and fav music is ${music}`);
@@ -1393,17 +1298,13 @@
 
 // about.apply(user1,["cricket","football"]);//This is the only differnce
 
-
 //********* apply method *************
 
-
 //********* bind method *************
-//here the arguments are not passsed in arrays, 
+//here the arguments are not passsed in arrays,
 //single arguement is passed
 //bind won't print anything instead it will return a whole function
-//you can save that function in some varialbe and call that 
-
-
+//you can save that function in some varialbe and call that
 
 // function about(hobby,music){
 //     console.log(`fav hobby is ${hobby} and fav music is ${music}`);
@@ -1423,10 +1324,9 @@
 
 // const func = about.bind(user1,"cricket","indie");//function is returned here
 // func();// when you call the func() the console is printed
- 
+
 //in future if you want to call func() you can call it
 //********* bind method *************
-
 
 //************ the one thing you should avoid **********
 
@@ -1442,12 +1342,9 @@
 // const myFunc = user.about;// here we cannot print this value , because we are calling myFunc, You will get undefined
 // myFunc();
 
-
 //you could use this way instead user.about()-> now this will be referred to user1
 //use bind method insted, which returnes the function which acan be stored
 //************ the one thing you should avoid **********
-
-
 
 //************ from the above example, use this istead ************
 
@@ -1465,7 +1362,6 @@
 
 //************ from the above example use this istead ************
 
-
 //**********arrow functions *************
 //in arrow function this always refers to one step above it.
 
@@ -1475,21 +1371,16 @@
 //     about : ()=>{
 //         console.log(this); //here this is refered as window object, even tough we call if from user.
 //     }
-    
+
 // }
 
 // user.about(); //always keeo in mind if we use wrrow functions , inside arrow funtion key word this refers to one step above it
 
-
 //**********arrow functions *************
-
-
-
 
 //we will learn about proto, oops, proototype, class
 
 //*********** creating objects using functions *************
-
 
 //*********** creating objects using functions *************
 
@@ -1516,7 +1407,7 @@
 //3. Object will be returned again
 
 //This is how that function is created
-    
+
 // function createUser(firstName,lastName,email,age,address){
 //  const user = {}; //empty object is created
 //  user.firstName = firstName;
@@ -1534,16 +1425,13 @@
 
 // }
 
-
 // const newUser = createUser("jasim","ahmed","jaism@gmail.com",32,"bangalore");
 // console.log(newUser);
 // console.log(newUser.is18());
 
-
 //but there are many issues in this, each time if a user is crated many lines of code is executed for creating functions
-//so what we can do is create functions outside 
+//so what we can do is create functions outside
 //*********** creating objects using functions *************
-
 
 //*********** creating objects using functions with less code*************
 
@@ -1561,7 +1449,7 @@
 //        return this.age >= 18;
 //    };
 //    return user; //just retutn the user
-   
+
 //    }
 
 //    //suppose we create many users such as , every time when we crete a user a new method will be created, which means lot of memory will be allocated
@@ -1571,9 +1459,7 @@
 //    const user2 = createUser("john","doe","john@gmail.com",32,"bangalore");
 //    const user3 = createUser("kyle","park","kyle@gmail.com",32,"bangalore");
 
-
 //*********** creating objects using functions with less code *************
-
 
 //*********** creating objects , defining methods outside *************
 //in this part we are defining method outside functions by creating new object
@@ -1598,12 +1484,11 @@
 //     user.address = address;
 //     user.about = userMethod.about; // this is the refernce for about method
 //     user.is18 = userMethod.is18;// here only refernce is stored, each time when object is created a refernce is called here
-    
+
 //    return user; //just return the user
-   
+
 //    }
 
-   
 //    const user1 = createUser("jasim","ahmed","jaism@gmail.com",32,"bangalore");
 //    const user2 = createUser("john","doe","john@gmail.com",32,"bangalore");
 //    const user3 = createUser("kyle","park","kyle@gmail.com",32,"bangalore");
@@ -1612,9 +1497,6 @@
 //this is also a tedious job we need to keep defining method every time in a function, so we can improve a lil bit
 //for eg we need to define functions in create method and we need to mention it in function as wll
 //*********** creating objects , defining methods outside *************
-
-
-
 
 //*********understan this example *********
 //if we wnat to achieve this example
@@ -1628,12 +1510,10 @@
 //     key3 : "value3"
 // }
 
-// console.log(obj2.key1);// here we are trying to access key1 of object 2, but it is not there. so we want to search from obj1 and retrive from there 
-//we are trying to get a value from the obj1 
+// console.log(obj2.key1);// here we are trying to access key1 of object 2, but it is not there. so we want to search from obj1 and retrive from there
+//we are trying to get a value from the obj1
 //this can be done using obj.create();, it creates empty object " const obj2 = Object.create(obj1)"
 //*********understan this example *********
-
-
 
 //*********** Object.create  ************
 
@@ -1650,7 +1530,6 @@
 
 //in the above example of functions you can use const user = Object.create(userMethod)
 //*********** Object.create  ************
-
 
 //********* final solution to create objects using functions ********
 
@@ -1677,21 +1556,19 @@
 //     user.address = address;
 //     user.about = userMethod.about; // this is the refernce for about method
 //     user.is18 = userMethod.is18;// here only refernce is stored, each time when object is created a refernce is called here
-    
+
 //    return user; //just return the user
-   
+
 //    }
 
-   
 //    const user1 = createUser("jasim","ahmed","jaism@gmail.com",32,"bangalore");
 //    console.log(createUser.prototype);
-   
+
 //    // we are trying to access sing method which is not defined in user object
 //    //for reference it will be stored in __proto__
 //    user1.sing();//first it will be checked in user object if not found it will search is __proto__ object
 
 //********* final solution to create objects using functions ********
-
 
 //************ prototype *********
 //what is prototype?
@@ -1709,8 +1586,8 @@
 // }
 
 // hello();
-// console.log(hello.prototype.name); 
-// console.log(hello.prototype.about); 
+// console.log(hello.prototype.name);
+// console.log(hello.prototype.about);
 // console.log(hello.prototype);
 
 //************ prototype *********
@@ -1729,7 +1606,7 @@
 // console.log(hello.myOwnPropert);
 
 // //function provides more usefull properties
-// //functions provides us the free space, that is object 
+// //functions provides us the free space, that is object
 // console.log(hello.prototype);//we will get one free object which has constructer in it
 // //rememeber only functions provide prototype property,not even objects or arrays
 // //eg
@@ -1749,7 +1626,6 @@
 // console.log(hello.prototype.sing());
 
 //********* prototype example ************
-
 
 //*********** storing methods in prototypes and accssing methods from there *******
 
@@ -1773,12 +1649,6 @@
 // [[__proto__ or prototype ]] is present in object not in function, prototype property is present inside function
 //*********** storing methods in prototypes and accssing methods from there *******
 
-
 //****** using prototype in example
 
-
-
 //****** using prototype in example
-
-
-
